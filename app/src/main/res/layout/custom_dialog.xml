@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/chkLowHigh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/low_to_high"
+            android:textSize="@dimen/dimen_system_font_header_3"
+            app:layout_constraintBottom_toTopOf="@+id/chkHighLow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <RadioButton
+            android:id="@+id/chkHighLow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/high_to_low"
+            android:textSize="@dimen/dimen_system_font_header_3"
+            app:layout_constraintBottom_toTopOf="@+id/chkRating"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/chkLowHigh"
+            app:layout_constraintTop_toBottomOf="@+id/chkLowHigh" />
+
+        <RadioButton
+            android:id="@+id/chkRating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/rating"
+            android:textSize="@dimen/dimen_system_font_header_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/chkHighLow"
+            app:layout_constraintTop_toBottomOf="@+id/chkHighLow" />
+
+        <View
+            android:id="@+id/chkLowHighDummy"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/chkLowHigh"
+            app:layout_constraintEnd_toEndOf="@+id/chkLowHigh"
+            app:layout_constraintStart_toStartOf="@+id/chkLowHigh"
+            app:layout_constraintTop_toTopOf="@+id/chkLowHigh" />
+
+        <View
+            android:id="@+id/chkHighLowDummy"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/chkHighLow"
+            app:layout_constraintEnd_toEndOf="@+id/chkHighLow"
+            app:layout_constraintStart_toStartOf="@+id/chkHighLow"
+            app:layout_constraintTop_toTopOf="@+id/chkHighLow" />
+
+        <View
+            android:id="@+id/chkRatingDummy"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/chkRating"
+            app:layout_constraintEnd_toEndOf="@+id/chkRating"
+            app:layout_constraintStart_toStartOf="@+id/chkRating"
+            app:layout_constraintTop_toTopOf="@+id/chkRating" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
